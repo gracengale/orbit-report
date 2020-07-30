@@ -13,5 +13,12 @@ export class Satellite {
         this.launchDate = launchDate;
     }
 
+    shouldShowWarning() : boolean {
+        if (this.type.toLowerCase() === 'space debris') {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 }
